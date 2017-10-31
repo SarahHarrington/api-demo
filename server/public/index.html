@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>API Demo</title>
+    <script src="vendors/angular.min.js"></script>
+    <script src="scripts/client.js"></script>
 </head>
-<body>
+<body ng-app="myApp">
     <h1>API Demo</h1>
+    <div ng-controller="apicontroller as joke">
+        <h3>Chuck Norris Joke:</h3>
+        {{joke.chuckNorrisJoke}}
+
+        <button ng-click="">New Joke!</button>
+    </div>
 </body>
 </html>
